@@ -13,7 +13,7 @@
       {{
         importedData[clickedId]
           ? importedData[clickedId].description
-          : "Coloured areas on the map represnet areas where scientific studies of the ocean have taken place. Please click on a coloured area to dislay further details about that study."
+          : "Coloured areas on the map represent areas where scientific studies of the ocean have taken place. Please click on a coloured area to dislay further details about that study."
       }}
     </p>
     <p>

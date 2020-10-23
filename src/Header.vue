@@ -6,13 +6,11 @@
 
 <script>
 export default {
-  name: 'Header',
-  data () {
+  name: "Header",
+  data() {
     return {
-      msg: 'Oceanographic data'
-    }
-  }
-}
+      msg: "Ocean data",
+    };
+  },
+};
 </script>
-
-
