@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app" id="app">
+    <Header class="header" />
+    <Body class="body" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//App only features two vue components, 'header' and 'body'. 'Map' is a child of 'body' and 'sidebar' is a child of map.
+import Header from "./Header.vue";
+import Body from "./Body.vue";
 
 export default {
-  name: 'App',
+  name: "app",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Body,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "./styles/stylesheet.scss";
 </style>
