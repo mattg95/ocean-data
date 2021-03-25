@@ -43,7 +43,7 @@ export default {
         worldMap.setZoom(2);
 
         //this function renders each dataset as a 'feature' on the base map
-        geoData.map((dataset, i) => {
+        await geoData.map((dataset, i) => {
           worldMap.data.addGeoJson({
             type: "Feature",
             //geometry defines the polygon shape on the map
@@ -65,7 +65,7 @@ export default {
         //this defined the colour and opacity of each feature
         worldMap.data.setStyle((data) => {
           return {
-            fillColor: data.j.colour,
+            fillColor: data.i.colour,
             fillOpacity: 0.5,
           };
         });
