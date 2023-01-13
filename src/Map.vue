@@ -65,7 +65,7 @@ export default {
         //this defined the colour and opacity of each feature
         worldMap.data.setStyle((data) => {
           return {
-            fillColor: data.i.colour,
+            fillColor: data.j.colour,
             fillOpacity: 0.5,
           };
         });
